@@ -22,6 +22,7 @@ public class GoAroundRoadBlock
       mark.turnLeft();
       mark.turnLeft();     // finished turning right
       mark.move();
+      
 
       // ann goes to meet mark
       ann.turnLeft();      // start turning right as three turn lefts

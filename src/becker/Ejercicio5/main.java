@@ -16,8 +16,67 @@ import becker.robots.Wall;
  * @author Sebastian
  */
 public class main {
+     public static void Solucionar(Robot a, City c){
+        a.move();
+        for(int i =0;i<3;i++){
+            a.turnLeft();
+        }
+        a.move();
+        a.turnLeft();
+        a.move();
+        a.move();
+        a.turnLeft();
+        a.move();
+        for(int i =0;i<3;i++){
+            a.turnLeft();
+        }
+        a.move();
+        a.pickThing();
+        a.turnLeft();
+        a.turnLeft();
+        a.move();
+        a.turnLeft();
+        a.move();
+        for(int i =0;i<3;i++){
+            a.turnLeft();
+        }
+        a.move();
+        for(int i =0;i<3;i++){
+            a.turnLeft();
+        }
+        a.move();
+        a.move();
+        for(int i =0;i<3;i++){
+            a.turnLeft();
+        }
+        a.move();
+        a.turnLeft();
+        a.move();
+        a.pickThing();
+        a.turnLeft();
+        a.turnLeft();
+        a.move();
+        for(int i =0;i<3;i++){
+            a.turnLeft();
+        }
+        a.move();
+        for(int i =0;i<3;i++){
+            a.turnLeft();
+        }
+        a.move();
+        a.turnLeft();
+        a.move();
+        for(int i =0;i<3;i++){
+            a.turnLeft();
+        }
+        a.move();
+        a.pickThing();
+        a.turnLeft();
+        a.move();
+        a.move();
+    }
     public static void main(String[] args) {
-        
+        //primero se crea el escenario
         City Francia= new City();
         Robot Frank= new Robot(Francia,5,6, Direction.NORTH,0);
         Wall block1=new Wall(Francia,3,0,Direction.WEST);
@@ -74,5 +133,6 @@ public class main {
         Thing cosa= new Thing (Francia,1,6);
         Thing cosa2= new Thing (Francia,2,4);
         Thing cosa3= new Thing (Francia,4,3);
+        Solucionar(Frank,Francia);//se llama al metodo para solucionar
     }
 }
